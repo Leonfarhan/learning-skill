@@ -14,7 +14,7 @@ export async function loginAction({request}) {
 
     // Sign in and redirect to the proper destination if successful.
     try {
-        await fakeAuthProvider.signin(email);
+        await fakeAuthProvider.signIn(email);
     } catch (error) {
         // Unused as of now but this is how you would handle invalid
         // username/password combinations - just like validating the inputs
@@ -27,3 +27,5 @@ export async function loginAction({request}) {
     let redirectTo = formData.get("redirectTo");
     return redirect(redirectTo || "/");
 }
+
+export default loginAction
