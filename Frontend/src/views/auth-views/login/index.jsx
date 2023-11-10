@@ -14,7 +14,7 @@ export default function LoginPage() {
             <div className="text-center">
                 <img src="your-logo.png" alt="Logo" className="w-12 h-12 mx-auto"/>
                 <h2 className="text-xl font-semibold mt-4 text-gray-600">
-                    Skill Share
+                    Learning Skill
                 </h2>
             </div>
             <Form method="post" replace className="mt-8">
